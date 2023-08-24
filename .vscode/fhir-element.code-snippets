@@ -1,0 +1,95 @@
+{
+  "ElementDefinition": {
+    "scope": "xml",
+    "prefix": "fhir-element",
+    "body": [
+      "$BLOCK_COMMENT_START TODO - complete the missing values $BLOCK_COMMENT_END",
+      "<element id=\"StructureDefinition.${1}\">",
+      "  <path value=\"StructureDefinition.${2}\"/>",
+      "  <short value=\"${3}\"/>",
+      "  <definition value=\"${4}\"/>",
+      "  <comment value=\"${5}\"/>",
+      "  <min value=\"${6:1}\"/>",
+      "  <max value=\"${7|1,*|}\"/>",
+      "  <constraint/>",
+      "  <mustSupport value=\"${0:true}\"/>",
+      "  <binding/>",
+      "</element>"
+    ],
+    "description": "This snippet inserts a full FHIR ElementDefinition node in XML"
+  },
+  "ElementDefinition-constraint": {
+    "scope": "xml",
+    "prefix": "element-constraint",
+    "body": [
+      "$BLOCK_COMMENT_START TODO - complete the missing values $BLOCK_COMMENT_END",
+      "<constraint>",
+      "  <key value=\"inv-dh-${1}\"/>",
+      "  <severity value=\"${2:error}\"/>",
+      "  <human value=\"${3}\"/>",
+      "  <expression value=\"${4}\"/>",
+      "  <source value=\"http://ns.electronichealth.net.au/fhir/StructureDefinition/${TM_FILENAME/(.*)\\..+$/$1/}\"/>",
+      "</constraint>"
+    ],
+    "description": "This snippet inserts a FHIR ElementDefinition.constraint node in XML"
+  },
+  "ElementDefinition-binding": {
+    "scope": "xml",
+    "prefix": "element-binding",
+    "body": [
+      "$BLOCK_COMMENT_START TODO - complete the missing values $BLOCK_COMMENT_END",
+      "<binding>",
+      "  <strength value=\"${1|example,preferred,extensible,required|}\"/>",
+      "  <description/>",
+      "  <valueSetReference>",
+      "    <reference value=\"${2}\"/>",
+      "  </valueSetReference>",
+      "</binding>"
+    ],
+    "description": "This snippet inserts a FHIR ElementDefinition.binding node in XML"
+  },
+  "ElementDefinition-slice": {
+    "scope": "xml",
+    "prefix": "element-slice",
+    "body": [
+      "$BLOCK_COMMENT_START TODO - complete the missing values $BLOCK_COMMENT_END",
+      "<slice>",
+      "  <name value=\"${1}\"/>",
+      "  <discriminator>",
+      "    <type value=\"${2|value,exists,pattern,type,profile|}\"/>",
+      "    <path value=\"${3}\"/>",
+      "  </discriminator>",
+      "  <ordered value=\"${4:true}\"/>",
+      "  <rules value=\"${5|open,closed,openAtEnd|}\"/>",
+      "</slice>"
+    ],
+    "description": "This snippet inserts a FHIR ElementDefinition.slice node in XML"
+  },
+  "ElementDefinition-slice-discriminator": {
+    "scope": "xml",
+    "prefix": "element-slice-discriminator",
+    "body": [
+      "$BLOCK_COMMENT_START TODO - complete the missing values $BLOCK_COMMENT_END",
+      "<discriminator>",
+      "  <type value=\"${1|value,exists,pattern,type,profile|}\"/>",
+      "  <path value=\"${2}\"/>",
+      "</discriminator>"
+    ],
+    "description": "This snippet inserts a FHIR ElementDefinition.slice.discriminator node in XML"
+  },
+  "ElementDefinition-type": {
+    "scope": "xml",
+    "prefix": "element-type",
+    "body": [
+      "$BLOCK_COMMENT_START TODO - complete the missing values $BLOCK_COMMENT_END",
+      "<type>",
+      "  <code value=\"${1}\"/>",
+      "  <profile value=\"${2}\"/>",
+      "  <targetProfile value=\"${3}\"/>",
+      "  <aggregation value=\"${4|contained,referenced,bundled|}\"/>",
+      "  <versioning value=\"${5|either,independent,specific|}\"/>",
+      "</type>"
+    ],
+    "description": "This snippet inserts a FHIR ElementDefinition.type node in XML"
+  }
+}

@@ -4,8 +4,8 @@
     "scope": "xml",
     "prefix": "example-fhir-patient",
     "body": [
-      "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+      "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
       "<Patient xmlns=\"http://hl7.org/fhir\">",
       "  <id value=\"${TM_FILENAME/(.*)\\..+$/$1/}\"/>",
       "  <meta>",

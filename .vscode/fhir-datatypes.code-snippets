@@ -1,0 +1,89 @@
+{
+    "Example of FHIR Address datatype": {
+        "scope": "xml",
+        "prefix": "fhir-Address",
+        "body": [
+            "<address>",
+            "  <use value=\"${1|home,work,temp,old,billing|}\"/>",
+            "  <type value=\"${2|postal,physical,both|}\"/>",
+            "  <text value=\"${3}\"/>",
+            "  <line value=\"${4}\"/>",
+            "  <line/>",
+            "  <city value=\"${5}\"/>",
+            "  <district value=\"${6}\"/>",
+            "  <state value=\"${7}\"/>",
+            "  <postalCode value=\"${8}\"/>",
+            "  <country value=\"${9:Australia}\"/>",
+            "  <period>",
+            "    <start value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+            "    <end value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+            "  </period>",
+            "</address>"
+        ],
+        "description": "This snippet inserts a full FHIR Address node in XML"
+    },
+    "Example of FHIR ContactPoint datatype": {
+        "scope": "xml",
+        "prefix": "fhir-ContactPoint",
+        "body": [
+            "<telecom>",
+            "  <system value=\"${1|phone,fax,email,pager,url,sms,other|}\"/>",
+            "  <value value=\"${2}\"/>",
+            "  <use value=\"${3|home,work,temp,old,mobile|}\"/>",
+            "  <rank value=\"${4}\"/>",
+            "  <period>",
+            "    <start value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+            "    <end value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+            "  </period>",
+            "</telecom>"
+        ],
+        "description": "This snippet inserts a full FHIR ContactPoint node in XML"
+    },
+    "Example of FHIR HumanName datatype": {
+        "scope": "xml",
+        "prefix": "fhir-HumanName",
+        "body": [
+            "<name>",
+            "  <use value=\"${1|usual,official,temp,nickname,anonymous,old,maiden|}\"/>",
+            "  <text value=\"${2}\"/>",
+            "  <family value=\"${3}\"/>",
+            "  <given value=\"${4}\"/>",
+            "  <given/>",
+            "  <prefix value=\"${5}\"/>",
+            "  <suffix value=\"${6}\"/>",
+            "  <period>",
+            "    <start value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+            "    <end value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+            "  </period>",
+            "</name>"
+        ],
+        "description": "This snippet inserts a full FHIR HumanName node in XML"
+    },
+    "Example of FHIR Identifier datatype generic": {
+        "scope": "xml",
+        "prefix": "fhir-Identifier-generic",
+        "body": [
+            "<identifier>",
+            "  <use value=\"${1|usual,official,temp,secondary|}\"/>",
+            "  <type>",
+            "    <coding>",
+            "      <system value=\"${2}\"/>",
+            "      <code value=\"${3}\"/>",
+            "      <display value=\"${4}\"/>",
+            "      <userSelected value=\"${5:true}\"/>",
+            "    </coding>",
+            "  </type>",
+            "  <system value=\"${6}\"/>",
+            "  <value value=\"${7}\"/>",
+            "  <period>",
+            "    <start value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+            "    <end value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+            "  </period>",
+            "  <assigner>",
+            "    <reference value=\"${8}\"/>",
+            "  </assigner>",
+            "</identifier>"
+        ],
+        "description": "This snippet inserts a full 'vanilla' FHIR Identifier node in XML"
+    },
+}

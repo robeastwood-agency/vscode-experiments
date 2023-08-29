@@ -161,10 +161,10 @@
       "    <telecom/>",
       "    <address/>",
       "  </contact>",
-      "    <endpoint>",
-      "      <reference value=\"Endpoint/${4|id|}\"/>",
-      "      <display value=\"TODO\"/>",
-      "    </endpoint>",
+      "  <endpoint>",
+      "    <reference value=\"Endpoint/${4|id|}\"/>",
+      "    <display value=\"TODO\"/>",
+      "  </endpoint>",
       "</Organization>"
     ],
     "description": "This snippet inserts a full representation of a FHIR Organization resource in XML"

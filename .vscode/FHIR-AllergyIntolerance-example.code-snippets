@@ -126,8 +126,7 @@
           "  </reaction>",
           "</AllergyIntolerance>"
         ],
-        "description": "Example FHIR AllergyIntolerance, in compliance with the HL7AU AU Base Allergy Intolerance profile http://hl7.org.au/fhir/StructureDefinition/au-allergyintolerance " 
-
+        "description": "Example FHIR AllergyIntolerance, in compliance with the HL7AU AU Base Allergy Intolerance profile http://hl7.org.au/fhir/StructureDefinition/au-allergyintolerance"
     }
     
 }

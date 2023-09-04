@@ -528,6 +528,7 @@
       "    <end value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
       "  </period>",
       "  <communication>",
+      "    ${BLOCK_COMMENT_START} Choose `language` from extensible binding https://healthterminologies.gov.au/fhir/ValueSet/related-person-relationship-type-1 ${BLOCK_COMMENT_END}",
       "    <language>",
       "      <coding>",
       "        <system value=\"urn:ietf:bcp:47\"/>",

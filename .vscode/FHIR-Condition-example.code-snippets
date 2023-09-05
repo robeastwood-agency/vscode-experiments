@@ -292,7 +292,6 @@
       "      <code value=\"${17|a,mo,wk,d,h,min|}\"/>",
       "    </high>",
       "  </oabatementRange>",
-      "  <abatementString value=\"${18}\"/>",
       "  <recorder>",
       "    <reference value=\"${19|Practitioner,PractitionerRole,Patient,RelatedPerson|}/TODO\"/>",
       "    <display value=\"TODO\"/>",

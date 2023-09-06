@@ -239,6 +239,8 @@
       "  <telecom/>",
       "  <gender value=\"${13|male,female,other,unknown|}\"/>",
       "  <birthDate value=\"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"/>",
+      // TODO add DAA extension
+      // TODO add deceased element with DAA extension
       "  <address/>",
       "  <address/>",
       "  <maritalStatus>",
@@ -248,6 +250,8 @@
       "      <display value=\"TODO-display-for-${14}\"/>",
       "    </coding>",
       "  </maritalStatus>",
+      // TODO add multipleBirth element
+      // TODO add contact backbone element
       "  <communication>",
       "    <language>",
       "      <coding>",
@@ -257,6 +261,8 @@
       "      </coding>",
       "    </language>",
       "  </communication>",
+      // TODO add generalPractitioner element
+      // TODO add managingOrganization element
       "</Patient>"
     ],
     "description": "This snippet inserts a full representation of a FHIR Patient resource in XML"

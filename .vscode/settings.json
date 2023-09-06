@@ -5,6 +5,7 @@
       "systemId": "input-cache/schemas/R4/fhir-single.xsd"
     }
   ],
+  "xml.foldings.includeClosingTagInFold": true,
   "xml.symbols.filters": [
     // Declaration of symbols filter to show all @id of the element node in the Outline
     // https://github.com/redhat-developer/vscode-xml/blob/main/docs/Symbols.md#xmlsymbolsfilters

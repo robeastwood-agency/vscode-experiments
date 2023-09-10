@@ -300,10 +300,16 @@
       "      </coding>",
       "    </language>",
       "  </communication>",
-      // TODO add generalPractitioner element
-      // TODO add managingOrganization element
+      "  <generalPractitioner>",
+      "    <reference value=\"Practitioner/TODO\"/>",
+      "    <display value=\"TODO\"/>",
+      "  </generalPractitioner>",
+      "  <managingOrganization>",
+      "    <reference value=\"Organization/TODO\"/>",
+      "    <display value=\"TODO\"/>",
+      "  </managingOrganization>",
       "</Patient>"
     ],
-    "description": "This snippet inserts a full representation of a FHIR Patient resource in XML"
+    "description": "This snippet inserts a full representation of a FHIR Patient resource in XML, with all HL7 AU Base Patient extensions"
   }
 }

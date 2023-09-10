@@ -32,7 +32,7 @@
       "      <display value=\"TODO-display-for-${7}\"/>",
       "    </coding>",
       "  </maritalStatus>",
-      "  ${BLOCK_COMMENT_START} only one of the following multipleBirt nodes ${BLOCK_COMMENT_END}",
+      "  ${BLOCK_COMMENT_START} only one of the following multipleBirth nodes ${BLOCK_COMMENT_END}",
       "  <multipleBirthBoolean value=\"${8|true,false|}\"/>",
       "  <multipleBirthInteger value=\"${9}\"/>",
       "  <contact>",

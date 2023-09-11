@@ -249,6 +249,6 @@
       "  </communication>",
       "</Practitioner>"
     ],
-    "description": "This snippet inserts a full representation of a FHIR Practitioner resource in XML, with all HL7 AU Base Patient extensions"
+    "description": "This snippet inserts a full representation of a FHIR Practitioner resource in XML, with all HL7 AU Base Practitioner extensions"
   }
 }

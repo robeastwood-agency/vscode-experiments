@@ -52,7 +52,7 @@
     ],
     "description": "This snippet inserts a full representation of a FHIR Practitioner resource in XML, aligned to the core spec"
   },
-  "Example FHIR Practitioner Au Base": {
+  "Example FHIR Practitioner AU Base": {
     "isFileTemplate": true,
     "scope": "xml",
     "prefix": "example-fhir-practitioner-au-base",

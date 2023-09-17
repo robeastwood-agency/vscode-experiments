@@ -2,7 +2,7 @@
   "Example FHIR Practitioner core spec": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "example-fhir-practitioner-simple",
+    "prefix": "example-fhir-practitioner-corespec",
     "body": [
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
@@ -53,7 +53,7 @@
   "Example FHIR Practitioner AU Base": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "example-fhir-practitioner-au-base",
+    "prefix": "example-fhir-practitioner-aubase",
     "body": [
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
@@ -252,7 +252,7 @@
   "Example FHIR Practitioner AU Core": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "example-fhir-practitioner-au-core",
+    "prefix": "example-fhir-practitioner-aucore",
     "body": [
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",

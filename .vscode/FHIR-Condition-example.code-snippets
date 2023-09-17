@@ -2,7 +2,7 @@
   "Example FHIR Condition AU Base": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "FHIR-Condition-AUbase-example",
+    "prefix": "FHIR-Condition-aubase",
     "body": [
       "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
@@ -177,7 +177,7 @@
   "Example FHIR Condition AU Core": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "FHIR-Condition-AUcore-example",
+    "prefix": "FHIR-Condition-aucore",
     "body": [
       "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",

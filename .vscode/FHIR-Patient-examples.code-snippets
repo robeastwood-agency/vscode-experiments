@@ -2,7 +2,7 @@
   "Example FHIR Patient core spec": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "example-fhir-patient-simple",
+    "prefix": "example-fhir-patient-corespec",
     "body": [
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
@@ -80,7 +80,7 @@
   "Example FHIR Patient AU Base": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "example-fhir-patient-au-base",
+    "prefix": "example-fhir-patient-aubase",
     "body": [
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
@@ -313,7 +313,7 @@
   "Example FHIR Patient AU Core": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "example-fhir-patient-au-core",
+    "prefix": "example-fhir-patient-aucore",
     "body": [
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",

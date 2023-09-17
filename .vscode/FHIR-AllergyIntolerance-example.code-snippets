@@ -2,7 +2,7 @@
   "Example FHIR AllergyIntolerance AU Base": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "FHIR-AllergyIntolerance-AUbase-example",
+    "prefix": "FHIR-AllergyIntolerance-aubase",
     "body": [
       "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
@@ -135,7 +135,7 @@
   "Example FHIR AllergyIntolerance AU Core": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "FHIR-AllergyIntolerance-AUcore-example",
+    "prefix": "FHIR-AllergyIntolerance-aucore",
     "body": [
       "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",

@@ -1,5 +1,4 @@
 {
-  // TODO HealthcareService - refactor for core spec snippet
   "Example FHIR HealthcareService core spec": {
     "isFileTemplate": true,
     "scope": "xml",
@@ -127,9 +126,8 @@
       "</HealthcareService>"
     ],
     "description": "This snippet inserts a full representation of a FHIR HealthcareService resource in XML, algned to the core spec"
-  }
-  // TODO HealthcareService - add AU Base HealthcareService snippet
-   "Example FHIR HealthcareService AU Base": {
+  },
+  "Example FHIR HealthcareService AU Base": {
     "isFileTemplate": true,
     "scope": "xml",
     "prefix": "example-fhir-healthcareservice-aubase",

@@ -183,10 +183,10 @@
     ],
     "description": "This snippet inserts a full representation of a FHIR Location resource in XML, algned to AU Core Location"
   },
-  "Example FHIR Location PCA": {
+  "Example FHIR Location PCA mobile": {
     "isFileTemplate": true,
     "scope": "xml",
-    "prefix": "example-fhir-location-pca",
+    "prefix": "example-fhir-location-pca-mobile",
     "body": [
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
       "${BLOCK_COMMENT_START} TODO customise to your scenario / use case ${BLOCK_COMMENT_END}",
@@ -219,13 +219,20 @@
       "  <identifier/>",
       "  <status value=\"${3|active,inactive|}\"/>",
       "  <name value=\"TODO\"/>",
-      "  <mode value=\"${4|instance,kind|}\"/>",
-      "  ${BLOCK_COMMENT_START} Choose `type` from required binding http://pca.digitalhealth.gov.au/fhir/4.0/ValueSet/pca-service-delivery-location-role-type ${BLOCK_COMMENT_END}",
+      "  <mode value=\"kind\"/>",
       "  <type>",
       "    <coding>",
       "      <system value=\"http://terminology.hl7.org/CodeSystem/v3-RoleCode\"/>",
-      "      <code value=\"${5|MOBL,VI,PTRES,SCHOOL,WORK,COMM,AMB|}\"/>",
-      "      <display value=\"TODO-display-value-for-${5}\"/>",
+      "      <code value=\"MOBL\"/>",
+      "      <display value=\"Mobile Unit\"/>",
+      "    </coding>",
+      "  </type>",
+      "  ${BLOCK_COMMENT_START} Choose second `type` from required binding http://pca.digitalhealth.gov.au/fhir/4.0/ValueSet/pca-service-delivery-location-role-type ${BLOCK_COMMENT_END}",
+      "  <type>",
+      "    <coding>",
+      "      <system value=\"http://terminology.hl7.org/CodeSystem/v3-RoleCode\"/>",
+      "      <code value=\"${4|PTRES,SCHOOL,WORK,COMM,AMB|}\"/>",
+      "      <display value=\"TODO-display-value-for-${4}\"/>",
       "    </coding>",
       "  </type>",
       "  <telecom/>",
@@ -244,6 +251,6 @@
       "  </managingOrganization>",
       "</Location>"
     ],
-    "description": "This snippet inserts a full representation of a FHIR Location resource in XML, algned to PCA Location"
+    "description": "This snippet inserts a full representation of a FHIR Location resource in XML, algned to PCA Location of kind mobile"
   }
 }

@@ -36,5 +36,42 @@
       "</identifier>"
     ],
     "description": "This snippet inserts a FHIR Location.identifier node for NATA Site Number in XML, in compliance with the HL7AU NATA Site Number profile http://hl7.org.au/fhir/StructureDefinition/au-natasitenumber"
+  },
+  "Location-Identifier-Delivery Point Identifier": {
+    "scope": "xml",
+    "prefix": "Location-Identifier-dpid",
+    "body": [
+      "<identifier>",
+      "  <type>",
+      "    <coding>",
+      "      <system value=\"http://terminology.hl7.org.au/CodeSystem/v2-0203\"/>",
+      "      <code value=\"DPID\"/>",
+      "      <display value=\"Australia Post Delivery Point Identifierv\"/>",
+      "    </coding>",
+      "    <text value=\"Delivery Point Identifier\"/>",
+      "  </type>",
+      "  <system value=\"http://hl7.org.au/id/dpid\"/>",
+      "  <value value=\"${RANDOM}${RANDOM/\\d{4}$//}\"/>",
+      "</identifier>"
+    ],
+    "description": "This snippet inserts a FHIR Location.identifier node for Pathology Provider Number in XML, in compliance with the HL7AU Delivery Point Identifier profile http://hl7.org.au/fhir/StructureDefinition/au-deliverypointidentifier"
+  },
+  "Location-Identifier-Geocoded National Address File": {
+    "scope": "xml",
+    "prefix": "Location-Identifier-gnaf",
+    "body": [
+      "<identifier>",
+      "  <type>",
+      "    <coding>",
+      "      <system value=\"http://terminology.hl7.org.au/CodeSystem/v2-0203\"/>",
+      "      <code value=\"GNAF\"/>",
+      "      <display value=\"Geocoded National Address File Identifier\"/>",
+      "    </coding>",
+      "    <text value=\"G-NAF Identifier\"/>",
+      "  </type>",
+      "  <system value=\"http://hl7.org.au/id/gnafidentifier\"/>",
+      "  <value value=\"GAVIC${RANDOM}${RANDOM/\\d{3}$//}\"/>",
+      "</identifier>"
+    ],
   }
 }
